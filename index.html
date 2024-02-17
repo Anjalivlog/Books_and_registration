@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#books">Books</a>
+        <a href="#register">Register</a>
+    </nav>
+    <section id="books">
+        <div class="container">
+            <h1>Books</h1>
+            <table class="table1">
+                <thead>
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Availability</th>
+                    </tr>
+                </thead>
+                <body>
+                    <tr>
+                        <td>1</td>
+                        <td class="title_column">
+                         Harry Potter
+                         <table class="nested_table">
+                            <tr>
+                                <td>Publication Date:2000</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count:250</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN:123-0145627898</td>
+                            </tr>
+                         </table>
+                        </td>
+                        <td>J.K. Rowling</td>
+                        <td>Fantasy</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="title_column">
+                         Junior Books
+                         <table class="nested_table">
+                            <tr>
+                                <td>Publication Date:2005</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count:300</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN:123-0145627778</td>
+                            </tr>
+                         </table>
+                        </td>
+                        <td>Amit Gerg</td>
+                        <td>Mistry</td>
+                        <td>Not Available</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="title_column">
+                         Mobile Computing
+                         <table class="nested_table">
+                            <tr>
+                                <td>Publication Date:2011</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count:400</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN:978-93-8067-432</td>
+                            </tr>
+                         </table>
+                        </td>
+                        <td>Vinay Kumar Singhai</td>
+                        <td>IT</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="title_column">
+                         A Tale of Two Cities
+                         <table class="nested_table">
+                            <tr>
+                                <td>Publication Date:1998</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count:250</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN:123-0145627898</td>
+                            </tr>
+                         </table>
+                        </td>
+                        <td>Charles Dickens</td>
+                        <td>Fantasy</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="title_column">
+                         The Little Prince
+                         <table class="nested_table">
+                            <tr>
+                                <td>Publication Date:2000</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count:500</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN:123-0145627898</td>
+                            </tr>
+                         </table>
+                        </td>
+                        <td>Antoine de Saint</td>
+                        <td>Fiction</td>
+                        <td>Not Available</td>
+                    </tr>
+                </body>
+            </table>
+        </div>
+    </section>
+
+    <section id="register">
+        <div class="container">
+            <h1>Registration Form</h1>
+            <form method="POST">
+                <div class="form_group">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" name="first_name" required>
+                </div>
+                <div class="form_group">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" name="last_name" required>
+                </div>
+                <div class="form_group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form_group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form_group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" min="5" max="100" required>
+                </div>
+                <div class="form_group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form_group">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required>
+                </div>
+                <div class="form_btn">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
